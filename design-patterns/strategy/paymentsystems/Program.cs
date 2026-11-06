@@ -14,6 +14,8 @@ namespace strategy
             double upiAmount = upiService.pay(amount);
             double creditCardAmount = creditCardService.pay(amount);
             double debitCardAmount = debitCardService.pay(amount);
+
+            Console.WriteLine($"Upi Amount: {upiAmount}, Credit card amount: {creditCardAmount}, debit card amount: {debitCardAmount}");
         }
     }
 }
